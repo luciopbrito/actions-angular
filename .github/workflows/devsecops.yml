@@ -1,0 +1,11 @@
+name: 'DevSecOps to actions-angular'
+run-name: 'DevSecOps to actions-angular'
+
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  dev:
+    uses: luciopbrito/actions/.github/workflows/angular-dev.yml@feat/angular-dev
